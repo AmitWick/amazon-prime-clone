@@ -1,0 +1,19 @@
+.image_shadow,
+.image_shadow_outward {
+  position: relative;
+}
+
+.image_shadow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-box-shadow: inset 100px 0px 100px 5px var(--BG-COLOR);
+  -webkit-box-shadow: inset 100px 0px 100px 5px var(--BG-COLOR);
+  box-shadow: inset 400px -200px 500px 100px #030303,
+    0px 0px 100px 100px #030303;
+}
+
+.detail_height {
+  height: calc(100vh - 60px - 60px);
+}
